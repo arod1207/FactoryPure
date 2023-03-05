@@ -150,12 +150,12 @@ export default function Home() {
                 <img
                   src="/images/mobile/image-grid-3@2x.jpg"
                   alt="people looking at art"
-                  className="md:h-[313px] md:w-[280px] lg:h-[313px] lg:max-w-[445px]"
+                  className="md:h-[313px] md:w-[280px] lg:h-[313px] lg:w-[445px]"
                 />
               </div>
               <div className="h-[293px] bg-[#151515] md:h-full">
-                <div className="px-6 pt-12 pb-[47px] md:h-[396px] md:w-[280px] lg:h-[375px] lg:px-[48px] lg:pt-[65px]">
-                  <h1 className="mb-6 text-[50px] font-black leading-[45px] text-white">
+                <div className="px-6 pt-12 pb-[47px] md:h-[396px] md:w-[280px] lg:h-[375px] lg:px-[48px] lg:py-[65px] lg:pr-0">
+                  <h1 className="mb-6 text-[50px] font-black leading-[45px] text-white lg:leading-[60px]">
                     COME & BE <br />
                     INSPIRED
                   </h1>
