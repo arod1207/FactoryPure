@@ -9,7 +9,7 @@ import {
   LogoDarkSVG,
   TwitterDarkSVG,
   TwitterSVG,
-} from "../Utils/Svgs";
+} from "../../utlis/Svgs";
 
 export default function Location() {
   const [hover, setHover] = useState(false);
@@ -18,7 +18,7 @@ export default function Location() {
   const [twitter, setTwitter] = useState(false);
   return (
     <main>
-      <section>
+      <div>
         <img
           src="images/mobile/image-map@2x.png"
           alt="map"
@@ -35,21 +35,21 @@ export default function Location() {
           className="relative hidden h-[600px] w-full lg:block"
         />
 
-        <Link href="/">
+        <div
+          className="absolute top-0 flex cursor-pointer md:left-[39px] lg:left-[156px]"
+          onMouseOver={() => setHover(true)}
+          onMouseOut={() => setHover(false)}
+        >
           <div
-            className="absolute top-0 flex cursor-pointer md:left-[39px] lg:left-[156px]"
-            onMouseOver={() => setHover(true)}
-            onMouseOut={() => setHover(false)}
+            className={`${
+              hover
+                ? "flex h-[72px] w-[56px] items-center justify-center bg-[#151515]"
+                : "flex h-[72px] w-[56px] items-center justify-center bg-[#d59663]"
+            }`}
           >
-            <div
-              className={`${
-                hover
-                  ? "flex h-[72px] w-[56px] items-center justify-center bg-[#151515]"
-                  : "flex h-[72px] w-[56px] items-center justify-center bg-[#d59663]"
-              }`}
-            >
-              <ChevronLeftSVG />
-            </div>
+            <ChevronLeftSVG />
+          </div>
+          <Link href="/">
             <button
               className={`${
                 hover
@@ -59,10 +59,10 @@ export default function Location() {
             >
               BACK TO HOME
             </button>
-          </div>
-        </Link>
-      </section>
-      <section className="bg-[#151515]">
+          </Link>
+        </div>
+      </div>
+      <div className="bg-[#151515]">
         <div className="gap-[68px] px-4 pt-12 md:flex md:px-[39px] md:pt-[88px] md:pb-[80px] lg:gap-[220px] lg:px-[165px] lg:pt-[104px]">
           <h1 className="pb-12 text-[50px] font-black leading-[45px] text-white">
             OUR LOCATION
@@ -83,7 +83,7 @@ export default function Location() {
             </p>
           </div>
         </div>
-      </section>
+      </div>
       <footer className="bg-[#d5966c]">
         <div className="py-12 px-8 md:flex md:py-14  lg:px-[165px]">
           <div className="md:mr-[65px] lg:mr-[140px] ">

@@ -10,7 +10,7 @@ import {
   LogoSVG,
   TwitterGoldSVG,
   TwitterSVG,
-} from "./Utils/Svgs";
+} from "../utlis/Svgs";
 
 export default function Home() {
   const [hover, setHover] = useState(false);
@@ -79,7 +79,7 @@ export default function Home() {
           </div>
           {/* //END OF LARGE SCREEN UI// */}
         </div>
-        <section className="mt-8 flex flex-col gap-8 px-3 md:absolute md:top-[145px] md:left-[389px] md:h-[410px] md:w-[339px] lg:hidden">
+        <div className="mt-8 flex flex-col gap-8 px-3 md:absolute md:top-[145px] md:left-[389px] md:h-[410px] md:w-[339px] lg:hidden">
           <h1 className="lg:font-white text-[60px] font-[900] leading-[55px] text-[#151515] lg:hidden">
             MODERN
             <h1>ART GALLERY</h1>
@@ -100,9 +100,9 @@ export default function Home() {
               </div>
             </div>
           </Link>
-        </section>
-        {/* //Middle Section// */}
-        <section className="mt-[120px] px-4 lg:m-auto lg:mt-[180px] lg:max-w-[1110px]">
+        </div>
+        {/* //Middle div// */}
+        <div className="mt-[120px] px-4 lg:m-auto lg:mt-[180px] lg:max-w-[1110px]">
           <div className="md:max-height-[400px] md:flex md:flex-row-reverse lg:items-center lg:justify-between">
             <img
               src="/images/mobile/image-grid-1@2x.jpg"
@@ -167,7 +167,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <footer className="mt-[120px] bg-[#151515]">
           <div className="py-12 px-8 md:flex md:py-14  lg:px-[165px]">
             <div className="md:mr-[65px] lg:mr-[140px] ">
