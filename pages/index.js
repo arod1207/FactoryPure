@@ -38,10 +38,10 @@ export default function Home() {
             alt="people looking at a painting"
             className="hidden h-[700px] w-[437px] md:block lg:h-[800px] lg:w-[540px]"
           />
-          {/* //Large Screens// */}
+
           <h1 className="hidden font-[900] leading-[88px] text-[#151515] lg:absolute lg:top-[189px] lg:left-[180px] lg:block lg:text-[96px] lg:text-white lg:mix-blend-difference">
-            MODERN
-            <h1>ART GALLERY</h1>
+            MODERN <br />
+            ART GALLERY
           </h1>
           <div className="hidden lg:absolute lg:top-[190px] lg:left-[925px] lg:block lg:w-[350px]">
             <p className="text-lg font-light leading-[28px] text-[#444444]">
@@ -77,12 +77,11 @@ export default function Home() {
               </div>
             </Link>
           </div>
-          {/* //END OF LARGE SCREEN UI// */}
         </div>
         <div className="mt-8 flex flex-col gap-8 px-3 md:absolute md:top-[145px] md:left-[389px] md:h-[410px] md:w-[339px] lg:hidden">
           <h1 className="lg:font-white text-[60px] font-[900] leading-[55px] text-[#151515] lg:hidden">
-            MODERN
-            <h1>ART GALLERY</h1>
+            MODERN <br />
+            ART GALLERY
           </h1>
           <p className="text-lg font-light leading-[28px] text-[#444444]">
             The arts in the collection of the Modern Art Gallery all started
