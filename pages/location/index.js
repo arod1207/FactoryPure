@@ -63,20 +63,20 @@ export default function Location() {
         </div>
       </div>
       <div className="bg-[#151515]">
-        <div className="gap-[68px] px-4 pt-12 md:flex md:px-[39px] md:pt-[88px] md:pb-[80px] lg:gap-[220px] lg:px-[165px] lg:pt-[104px]">
-          <h1 className="pb-12 text-[50px] font-black leading-[45px] text-white">
+        <div className="gap-[68px] px-4 pt-12 md:flex md:px-[39px] md:pt-[88px] md:pb-[80px] lg:flex lg:justify-evenly lg:gap-[220px] lg:px-[165px] lg:pt-[104px]">
+          <h1 className="pb-12 text-[50px] font-black leading-[45px] text-white lg:max-w-[300px] lg:text-[70px] lg:leading-[70px]">
             OUR LOCATION
           </h1>
           <div>
-            <h2 className="text-[32px] font-black leading-[32px] text-[#D5966c]">
+            <h2 className="text-[32px] font-black leading-[32px] text-[#D5966c] lg:text-[36px]">
               99 KING STREET
             </h2>
-            <p className="py-5 text-lg font-light leading-7 text-white">
+            <p className="py-5 text-lg font-light leading-7 text-white lg:text-[22px] lg:leading-[32px]">
               Newport <br />
               RI 02840 <br />
               United States of America
             </p>
-            <p className="pb-14 text-lg font-light leading-7 text-white md:pb-0">
+            <p className="pb-14 text-lg font-light leading-7 text-white md:pb-0 lg:w-[445px] lg:text-[22px] lg:leading-[32px]">
               Our newly opened gallery is located near the Edward King House on
               99 King Street, the Modern Art Gallery is free to all visitors and
               open seven days a week from 8am to 9pm.
