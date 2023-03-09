@@ -35,21 +35,21 @@ export default function Location() {
           className="relative hidden h-[600px] w-full lg:block"
         />
 
-        <div
-          className="absolute top-0 flex cursor-pointer md:left-[39px] lg:left-[156px]"
-          onMouseOver={() => setHover(true)}
-          onMouseOut={() => setHover(false)}
-        >
+        <Link href="/">
           <div
-            className={`${
-              hover
-                ? "flex h-[72px] w-[56px] items-center justify-center bg-[#151515]"
-                : "flex h-[72px] w-[56px] items-center justify-center bg-[#d59663]"
-            }`}
+            className="absolute top-0 flex cursor-pointer md:left-[39px] lg:left-[156px]"
+            onMouseOver={() => setHover(true)}
+            onMouseOut={() => setHover(false)}
           >
-            <ChevronLeftSVG />
-          </div>
-          <Link href="/">
+            <div
+              className={`${
+                hover
+                  ? "flex h-[72px] w-[56px] items-center justify-center bg-[#151515]"
+                  : "flex h-[72px] w-[56px] items-center justify-center bg-[#d59663]"
+              }`}
+            >
+              <ChevronLeftSVG />
+            </div>
             <button
               className={`${
                 hover
@@ -59,8 +59,8 @@ export default function Location() {
             >
               BACK TO HOME
             </button>
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
       <div className="bg-[#151515]">
         <div className="gap-[68px] px-4 pt-12 md:flex md:px-[39px] md:pt-[88px] md:pb-[80px] lg:flex lg:justify-evenly lg:gap-[220px] lg:px-[165px] lg:pt-[104px]">
